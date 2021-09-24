@@ -39,8 +39,43 @@ namespace Bakery.Tests
       //assert
       Assert.AreEqual(expectedCost, result);
     }
+    [TestMethod]
+    public void CalculateCost_ReturnsCostOf4_15()
+    {
+      //arrange
+      int expectedCost = 15;
+      int numberOfLoaves = 4;
+      //act
+      int result = Bread.CalculateCost(numberOfLoaves);
+      //assert
+      Assert.AreEqual(expectedCost, result);
+    }
+    [TestMethod]
+    public void CalculateCost_ReturnsCostOf6_20()
+    {
+      //arrange
+      int expectedCost = 20;
+      int numberOfLoaves = 6;
+      //act
+      int result = Bread.CalculateCost(numberOfLoaves);
+      //assert
+      Assert.AreEqual(expectedCost, result);
+    }
+    [TestMethod]
+    public void CalculateCost_ReturnsCostOf0_0()
+    {
+      //arrange
+      int expectedCost = 0;
+      int numberOfLoaves = 0;
+      //act
+      int result = Bread.CalculateCost(numberOfLoaves);
+      //assert
+      Assert.AreEqual(expectedCost, result);
+    }
 
     /*
+     git commit -am "Add already passing tests for Bread.CalculateCost(4 and 0)"
+
     Test and implement Bread CalculateCost(int n) static fn
     Test and implement Pastry CalculateCost(int n) static fn
     
