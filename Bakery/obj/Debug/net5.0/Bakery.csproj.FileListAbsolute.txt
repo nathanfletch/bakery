@@ -1,0 +1,16 @@
+C:\Users\natha\Desktop\epicodus\cs\Bakery.Solution\Bakery\bin\Debug\net5.0\Bakery.deps.json
+C:\Users\natha\Desktop\epicodus\cs\Bakery.Solution\Bakery\bin\Debug\net5.0\Bakery.dll
+C:\Users\natha\Desktop\epicodus\cs\Bakery.Solution\Bakery\bin\Debug\net5.0\ref\Bakery.dll
+C:\Users\natha\Desktop\epicodus\cs\Bakery.Solution\Bakery\bin\Debug\net5.0\Bakery.pdb
+C:\Users\natha\Desktop\epicodus\cs\Bakery.Solution\Bakery\obj\Debug\net5.0\Bakery.csprojAssemblyReference.cache
+C:\Users\natha\Desktop\epicodus\cs\Bakery.Solution\Bakery\obj\Debug\net5.0\Bakery.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\natha\Desktop\epicodus\cs\Bakery.Solution\Bakery\obj\Debug\net5.0\Bakery.AssemblyInfoInputs.cache
+C:\Users\natha\Desktop\epicodus\cs\Bakery.Solution\Bakery\obj\Debug\net5.0\Bakery.AssemblyInfo.cs
+C:\Users\natha\Desktop\epicodus\cs\Bakery.Solution\Bakery\obj\Debug\net5.0\Bakery.csproj.CoreCompileInputs.cache
+C:\Users\natha\Desktop\epicodus\cs\Bakery.Solution\Bakery\obj\Debug\net5.0\Bakery.dll
+C:\Users\natha\Desktop\epicodus\cs\Bakery.Solution\Bakery\obj\Debug\net5.0\ref\Bakery.dll
+C:\Users\natha\Desktop\epicodus\cs\Bakery.Solution\Bakery\obj\Debug\net5.0\Bakery.pdb
+C:\Users\natha\Desktop\epicodus\cs\Bakery.Solution\Bakery\bin\Debug\net5.0\Bakery.exe
+C:\Users\natha\Desktop\epicodus\cs\Bakery.Solution\Bakery\bin\Debug\net5.0\Bakery.runtimeconfig.json
+C:\Users\natha\Desktop\epicodus\cs\Bakery.Solution\Bakery\bin\Debug\net5.0\Bakery.runtimeconfig.dev.json
+C:\Users\natha\Desktop\epicodus\cs\Bakery.Solution\Bakery\obj\Debug\net5.0\Bakery.genruntimeconfig.cache
