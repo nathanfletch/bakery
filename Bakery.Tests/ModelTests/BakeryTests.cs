@@ -147,7 +147,8 @@ namespace Bakery.Tests
     public void Constructor_AddsToOrder_OrderCount1()
     {
       //arrange
-      int expectedCount = 1;
+      int startingCount = BakeryItem.OrderItems.Count;
+      int expectedCount = startingCount + 1;
       //act
       Pastry myPastry = new Pastry();
       int result = BakeryItem.OrderItems.Count;
