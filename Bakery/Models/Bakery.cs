@@ -2,8 +2,7 @@ using System.Collections.Generic;
 
 namespace Bakery
 {
-  public class ClassName
+  public class Bread
   {
-    // properties, constructors, methods, etc. go here
   }
 }
