@@ -74,7 +74,6 @@ namespace Bakery.Tests
     }
 
     /*
-     git commit -am "Add already passing tests for Bread.CalculateCost(4 and 0)"
 
     Test and implement Bread CalculateCost(int n) static fn
     Test and implement Pastry CalculateCost(int n) static fn
@@ -99,5 +98,21 @@ namespace Bakery.Tests
     */
 
 
+  }
+
+  [TestClass]
+  public class PastryTests
+  {
+    [TestMethod]
+    public void CalculateCost_ReturnsCost_2()
+    {
+      //arrange
+      int expectedCost = 2;
+      int numberOfPastries = 1;
+      //act
+      int result = Pastry.CalculateCost(numberOfPastries);
+      //assert
+      Assert.AreEqual(expectedCost, result);
+    }
   }
 }
