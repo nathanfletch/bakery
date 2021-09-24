@@ -1,5 +1,8 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Bakery;
+using System.Collections.Generic;
+using System;
+
 
 namespace Bakery.Tests
 {
@@ -154,6 +157,31 @@ namespace Bakery.Tests
       int result = BakeryItem.OrderItems.Count;
       //assert
       Assert.AreEqual(expectedCount, result);
+    }
+  }
+
+  [TestClass]
+  public class BakeryItemTests
+  {
+    [TestMethod]
+    public void GetOrderCost_ReturnsCostOfBreadOnly_10()
+    {
+      //arrange
+      BakeryItem.OrderItems.Clear();
+      for(int i = 0; i < 3; i++)
+      {
+        Bread myLoaf = new Bread();
+      }
+      // Bread myLoaf1 = new Bread();
+      // Bread myLoaf2 = new Bread();
+      // Bread myLoaf3 = new Bread();
+      int expectedCost = 10;
+      //act
+      int result = BakeryItem.GetOrderCost();
+      Console.WriteLine($"Order Count: {BakeryItem.OrderItems.Count}");
+      
+      //assert
+      Assert.AreEqual(expectedCost,result);
     }
   }
 }
