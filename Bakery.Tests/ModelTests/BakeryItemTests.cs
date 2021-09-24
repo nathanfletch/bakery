@@ -79,7 +79,7 @@ namespace Bakery.Tests
 
       //act
       BakeryItem.RemoveFromOrder(inputItemNumbers);
-      int result = BakeryItem.OrderItems.Count;
+      int result = BakeryItem._orderItems.Count;
       
       //assert
       Assert.AreEqual(expectedCount,result);
@@ -96,7 +96,7 @@ namespace Bakery.Tests
 
       //act
       BakeryItem.RemoveFromOrder(inputItemNumbers);
-      int result = BakeryItem.OrderItems.Count;
+      int result = BakeryItem._orderItems.Count;
       
       //assert
       Assert.AreEqual(expectedCount,result);

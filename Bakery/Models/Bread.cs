@@ -17,7 +17,7 @@ namespace Bakery.Models
 
     public Bread()
     {
-      BakeryItem.OrderItems.Add(this);
+      BakeryItem._orderItems.Add(this);
     }
 
     public static int CalculateCost(int loaves)

@@ -13,7 +13,7 @@ namespace Bakery.Models
     }
     public Pastry()
     {
-      BakeryItem.OrderItems.Add(this);
+      BakeryItem._orderItems.Add(this);
     }
 
     public static int CalculateCost(int pastries)

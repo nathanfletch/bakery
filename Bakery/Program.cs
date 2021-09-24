@@ -38,11 +38,7 @@ public class Program
 
     void DisplayOrder()
     {
-      Console.WriteLine($"Take a look at your order: ");
-      for (int i = 0; i < BakeryItem.OrderItems.Count; i++)
-      {
-        Console.WriteLine($"{i + 1}: {BakeryItem.OrderItems[i].Name}");
-      }
+      Console.WriteLine(BakeryItem.GetOrderDisplay());
       Console.WriteLine($"Total: ${BakeryItem.GetOrderCost()}.");
     }
 
