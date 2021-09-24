@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Bakery
+namespace Bakery.Models
 {
   public class Pastry : BakeryItem
   {
