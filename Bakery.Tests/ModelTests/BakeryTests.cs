@@ -7,9 +7,40 @@ namespace Bakery.Tests
   public class BreadTests
   {
     [TestMethod]
-    public void NameOfMethodWeAreTesting_DescriptionOfBehavior_ExpectedReturnValue()
+    public void CalculateCost_ReturnsCost_5()
     {
-      Assert.AreEqual(EXPECTED RESULT, CODE TO TEST);
+      //arrange
+      int expectedCost = 5;
+      int numberOfLoaves = 1;
+      //act
+      int result = Bread.CalculateCost(numberOfLoaves);
+      //assert
+      Assert.AreEqual(expectedCost, result);
     }
+
+    /*
+    Test and implement Bread CalculateCost(int n) static fn
+    Test and implement Pastry CalculateCost(int n) static fn
+    
+    Add abstract class BakeryItem
+    test/imp constructors
+    static list: order 
+
+    add fn
+    calc/disp order cost GetOrderCost
+      use GetType and call each classes' method.
+    UI!
+
+  
+
+
+
+
+
+    Bread
+    Pastry 
+    */
+
+
   }
 }
