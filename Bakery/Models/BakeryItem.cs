@@ -27,5 +27,11 @@ namespace Bakery.Models
       }
       return Bread.CalculateCost(numLoaves) + Pastry.CalculateCost(numPastries);
     }
+
+    public void RemoveFromOrder(int itemNumber)
+    {
+      //do I need itemNumber? alternative would be to include an ItemNumber property and use internal data
+      // OrderItems.RemoveAt(itemNumber - 1);
+    }
   }
 }

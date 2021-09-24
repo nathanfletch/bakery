@@ -42,9 +42,6 @@ public class Program
       {
         Console.WriteLine($"{i + 1}: {BakeryItem.OrderItems[i].Name}");
       }
-      // foreach (BakeryItem item in BakeryItem.OrderItems)
-      // {
-      // }
       Console.WriteLine($"Total: ${BakeryItem.GetOrderCost()}.");
     }
 
