@@ -70,10 +70,10 @@ namespace Bakery.Tests
       BakeryItem.OrderItems.Clear();
       Bread myLoaf = new Bread();
       int expectedCount = 0;
-      int inputItemNumber = 1;
+      string inputItemNumbers = "1";
 
       //act
-      myLoaf.RemoveFromOrder(inputItemNumber);
+      BakeryItem.RemoveFromOrder(inputItemNumbers);
       int result = BakeryItem.OrderItems.Count;
       
       //assert

@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using Bakery.Models;
 
 public class Program
@@ -37,7 +38,7 @@ public class Program
 
     void DisplayOrder()
     {
-      Console.WriteLine($"Your order: ");
+      Console.WriteLine($"Take a look at your order: ");
       for (int i = 0; i < BakeryItem.OrderItems.Count; i++)
       {
         Console.WriteLine($"{i + 1}: {BakeryItem.OrderItems[i].Name}");
@@ -47,11 +48,19 @@ public class Program
 
     void AskWhetherToModify()
     {
-      Console.WriteLine($"Would you like to add to your order? (Y/N)");
-      string input = Console.ReadLine();
-      if(input.ToLower() == "y")
+      Console.WriteLine($"Everything look ok? Press A to add items, R to remove items, or C to checkout.");
+      string inputOption = Console.ReadLine().ToUpper();
+      if(inputOption == "A")
       {
         InteractWithCustomer();
+      } 
+      else if (inputOption == "R")
+      {
+        Console.WriteLine($"Enter the item numbers (separated by one space) you would like to remove:");
+        string itemsToRemove = Console.ReadLine();
+        BakeryItem.RemoveFromOrder(itemsToRemove);
+        DisplayOrder();
+        AskWhetherToModify();
       }
       else
       {

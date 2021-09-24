@@ -28,10 +28,15 @@ namespace Bakery.Models
       return Bread.CalculateCost(numLoaves) + Pastry.CalculateCost(numPastries);
     }
 
-    public void RemoveFromOrder(int itemNumber)
+    public static void RemoveFromOrder(string itemsToRemove)
     {
-      //do I need itemNumber? alternative would be to include an ItemNumber property and use internal data
-      OrderItems.RemoveAt(itemNumber - 1);
+      string[] itemStrings = itemsToRemove.Split(' ');
+      int[] itemInts = Array.ConvertAll(itemStrings, int.Parse);
+
+      for (int i = itemInts.Length - 1; i >= 0; i--)
+      {
+        BakeryItem.OrderItems.RemoveAt(itemInts[i] - 1);
+      }    
     }
   }
 }
