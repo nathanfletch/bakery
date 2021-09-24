@@ -7,15 +7,18 @@ namespace Bakery
     public static int CalculateCost(int pastries)
     {
       int totalCost = 0;
-      totalCost += pastries * 2;
+      for (int pastryNumber = 1; pastryNumber <= pastries; pastryNumber++)
+      {
+        if(pastryNumber % 3 != 0)
+        {
+          totalCost += 2;
+        }
+        else
+        {
+          totalCost += 1;
+        }
+      }
       return totalCost;
     }
   }
 }
-      // for (int pastryNumber = 1; pastryNumber <= pastries; pastryNumber++)
-      // {
-      //   if(pastryNumber % 3 != 0)
-      //   {
-      //     totalCost += 5;
-      //   }
-      // }
