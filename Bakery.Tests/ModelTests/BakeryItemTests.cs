@@ -79,5 +79,22 @@ namespace Bakery.Tests
       //assert
       Assert.AreEqual(expectedCount,result);
     }
+    [TestMethod]
+    public void RemoveFromOrder_DecrementsCountBy2_0()
+    {
+      //arrange
+      BakeryItem.OrderItems.Clear();
+      Bread myLoaf = new Bread();
+      Bread myLoaf2 = new Bread();
+      int expectedCount = 0;
+      string inputItemNumbers = "1 2";
+
+      //act
+      BakeryItem.RemoveFromOrder(inputItemNumbers);
+      int result = BakeryItem.OrderItems.Count;
+      
+      //assert
+      Assert.AreEqual(expectedCount,result);
+    }
   }
 }
