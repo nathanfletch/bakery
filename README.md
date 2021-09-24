@@ -58,13 +58,14 @@ _Nathan Fletcher @ github.com/nathanfletch_
     UI!
 
     Completed Extras:
-    update Readme
-    
+    -update Readme
+    -ui cycle to keep adding
+    Name prop
+
     Extra: 
     extra props 
     -freshness/daysOld: change price function
     -names (Bob's Murderer Bread, Focaccia)
-    -ui cycle to keep adding
     -privatize the static for BakeryItem
     -remove from order
     */
