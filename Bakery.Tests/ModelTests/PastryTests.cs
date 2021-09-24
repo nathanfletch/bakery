@@ -77,5 +77,16 @@ namespace Bakery.Tests
       //assert
       Assert.AreEqual(expectedCount, result);
     }
+    [TestMethod]
+    public void NameGetter_ReturnsName_Pastry()
+    {
+      //arrange
+      string expectedString = "Pastry";
+      //act
+      Pastry myPastry = new Pastry();
+      string result = myPastry.Name;
+      //assert
+      Assert.AreEqual(expectedString, result);
+    }
   }
 }
