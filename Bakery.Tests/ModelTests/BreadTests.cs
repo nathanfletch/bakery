@@ -99,17 +99,17 @@ namespace Bakery.Tests
       //assert
       Assert.AreEqual(expectedCount, result);
     }
+
+    [TestMethod]
+    public void NameGetter_ReturnsName_Bread()
+    {
+      //arrange
+      string expectedString = "Bread";
+      //act
+      Bread myLoaf = new Bread();
+      string result = myLoaf.Name;
+      //assert
+      Assert.AreEqual(expectedString, result);
+    }
   }
 }
-    /*
-    Test and implement Bread CalculateCost(int n) static fn
-    Test and implement Pastry CalculateCost(int n) static fn
-    
-    Add abstract class BakeryItem
-    test/imp constructors
-    static list: order 
-
-    calc/disp order cost GetOrderCost
-      use GetType and call each classes' method.
-    UI!
-    */

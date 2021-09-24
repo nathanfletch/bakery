@@ -3,9 +3,11 @@ using System;
 
 namespace Bakery.Models
 {
-  public abstract class BakeryItem
+  public abstract class BakeryItem 
   {
     public static List<BakeryItem> OrderItems {get;} = new List<BakeryItem>();
+
+    public abstract string Name {get;}
 
     public static int GetOrderCost()
     {

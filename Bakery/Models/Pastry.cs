@@ -4,6 +4,13 @@ namespace Bakery.Models
 {
   public class Pastry : BakeryItem
   {
+    public override string Name
+    {
+        get
+        {
+            return "Pastry";
+        }
+    }
     public Pastry()
     {
       BakeryItem.OrderItems.Add(this);

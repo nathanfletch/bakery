@@ -32,7 +32,13 @@ public class Program
 
     void DisplayOrder()
     {
-      Console.WriteLine($"Your order: ${BakeryItem.GetOrderCost()}.");
+      //Display items: 
+      Console.WriteLine($"Your order: ");
+      foreach (BakeryItem item in BakeryItem.OrderItems)
+      {
+        Console.WriteLine($"{item.GetType()}");
+      }
+      Console.WriteLine($"Total: ${BakeryItem.GetOrderCost()}.");
     }
 
 

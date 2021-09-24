@@ -43,3 +43,28 @@ Copyright (c) 2021 Nathan Fletcher
 ## Contact Information
 
 _Nathan Fletcher @ github.com/nathanfletch_  
+
+    /*
+    MVP:
+    Test and implement Bread CalculateCost(int n) static fn
+    Test and implement Pastry CalculateCost(int n) static fn
+    
+    Add abstract class BakeryItem
+    test/imp constructors
+    static list: order 
+
+    calc/disp order cost GetOrderCost
+      use GetType and call each classes' method.
+    UI!
+
+    Completed Extras:
+    update Readme
+    
+    Extra: 
+    extra props 
+    -freshness/daysOld: change price function
+    -names (Bob's Murderer Bread, Focaccia)
+    -ui cycle to keep adding
+    -privatize the static for BakeryItem
+    -remove from order
+    */
