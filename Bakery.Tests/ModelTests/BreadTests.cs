@@ -86,6 +86,19 @@ namespace Bakery.Tests
       //assert
       Assert.AreEqual(expectedCount, result);
     }
+    [TestMethod]
+    public void Add_AddsLoavesToOrder_PreviousCountPlus3()
+    {
+      //arrange
+      int numToAdd = 3;
+      int startingCount = BakeryItem.OrderItems.Count;
+      int expectedCount = startingCount + numToAdd;
+      //act
+      Bread.Add(numToAdd);
+      int result = BakeryItem.OrderItems.Count;
+      //assert
+      Assert.AreEqual(expectedCount, result);
+    }
   }
 }
     /*

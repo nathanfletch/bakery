@@ -21,5 +21,13 @@ namespace Bakery.Models
       }
       return totalCost;
     }
+
+    public static void Add(int numLoaves)
+    {
+      for(int i = 0; i < numLoaves; i++)
+      {
+        Bread anonymousLoaf = new Bread();
+      }
+    }
   }
 }
