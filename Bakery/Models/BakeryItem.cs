@@ -52,5 +52,10 @@ namespace Bakery.Models
     {
       _orderItems.Clear();
     }
+
+    public static int GetCount()
+    {
+      return _orderItems.Count;
+    }
   }
 }

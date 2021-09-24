@@ -49,7 +49,7 @@ public class Program
       if(inputOption == "A")
       {
         InteractWithCustomer();
-      } 
+      }
       else if (inputOption == "R")
       {
         Console.WriteLine($"Enter the item numbers (separated by one space) you would like to remove:");

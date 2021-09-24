@@ -63,7 +63,7 @@ namespace Bakery.Tests
       int expectedCount = 1;
       //act
       Pastry myPastry = new Pastry();
-      int result = BakeryItem._orderItems.Count;
+      int result = BakeryItem.GetCount();
       //assert
       Assert.AreEqual(expectedCount, result);
     }
@@ -74,7 +74,7 @@ namespace Bakery.Tests
       int numToAdd = 3;
       //act
       Pastry.Add(numToAdd);
-      int result = BakeryItem._orderItems.Count;
+      int result = BakeryItem.GetCount();
       //assert
       Assert.AreEqual(numToAdd, result);
     }
