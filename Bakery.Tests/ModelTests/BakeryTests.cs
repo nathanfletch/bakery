@@ -17,6 +17,17 @@ namespace Bakery.Tests
       //assert
       Assert.AreEqual(expectedCost, result);
     }
+    [TestMethod]
+    public void CalculateCost_ReturnsCost_10()
+    {
+      //arrange
+      int expectedCost = 10;
+      int numberOfLoaves = 2;
+      //act
+      int result = Bread.CalculateCost(numberOfLoaves);
+      //assert
+      Assert.AreEqual(expectedCost, result);
+    }
 
     /*
     Test and implement Bread CalculateCost(int n) static fn
