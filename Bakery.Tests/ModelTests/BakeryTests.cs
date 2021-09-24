@@ -72,9 +72,19 @@ namespace Bakery.Tests
       //assert
       Assert.AreEqual(expectedCost, result);
     }
-
+    [TestMethod]
+    public void Constructor_AddsToOrder_OrderCount1()
+    {
+      //arrange
+      int expectedCount = 1;
+      //act
+      Bread myLoaf = new Bread();
+      int result = BakeryItem.OrderItems.Count;
+      //assert
+      Assert.AreEqual(expectedCount, result);
+    }
+  }
     /*
-
     Test and implement Bread CalculateCost(int n) static fn
     Test and implement Pastry CalculateCost(int n) static fn
     
@@ -82,24 +92,10 @@ namespace Bakery.Tests
     test/imp constructors
     static list: order 
 
-    add fn
     calc/disp order cost GetOrderCost
       use GetType and call each classes' method.
     UI!
-
-  
-
-
-
-
-
-    Bread
-    Pastry 
     */
-
-
-  }
-
   [TestClass]
   public class PastryTests
   {

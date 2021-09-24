@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 namespace Bakery
 {
-  public class Pastry
+  public class Pastry : BakeryItem
   {
     public static int CalculateCost(int pastries)
     {
