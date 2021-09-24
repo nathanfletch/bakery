@@ -125,5 +125,27 @@ namespace Bakery.Tests
       //assert
       Assert.AreEqual(expectedCost, result);
     }
+    [TestMethod]
+    public void CalculateCost_ReturnsCost_0()
+    {
+      //arrange
+      int expectedCost = 0;
+      int numberOfPastries = 0;
+      //act
+      int result = Pastry.CalculateCost(numberOfPastries);
+      //assert
+      Assert.AreEqual(expectedCost, result);
+    }
+    [TestMethod]
+    public void CalculateCost_ReturnsCost_10()
+    {
+      //arrange
+      int expectedCost = 10;
+      int numberOfPastries = 6;
+      //act
+      int result = Pastry.CalculateCost(numberOfPastries);
+      //assert
+      Assert.AreEqual(expectedCost, result);
+    }
   }
 }
