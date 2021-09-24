@@ -31,7 +31,7 @@ namespace Bakery.Models
     public void RemoveFromOrder(int itemNumber)
     {
       //do I need itemNumber? alternative would be to include an ItemNumber property and use internal data
-      // OrderItems.RemoveAt(itemNumber - 1);
+      OrderItems.RemoveAt(itemNumber - 1);
     }
   }
 }
