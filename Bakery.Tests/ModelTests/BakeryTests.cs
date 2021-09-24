@@ -197,5 +197,26 @@ namespace Bakery.Tests
       //assert
       Assert.AreEqual(expectedCost,result);
     }
+    [TestMethod]
+    public void GetOrderCost_ReturnsCostOfBothTypes_15()
+    {
+      //arrange
+      BakeryItem.OrderItems.Clear();
+      for(int i = 0; i < 3; i++)
+      {
+        Pastry myPastry = new Pastry();
+      }
+      for(int i = 0; i < 3; i++)
+      {
+        Bread myLoaf = new Bread();
+      }
+      int expectedCost = 15;
+
+      //act
+      int result = BakeryItem.GetOrderCost();
+      
+      //assert
+      Assert.AreEqual(expectedCost,result);
+    }
   }
 }
