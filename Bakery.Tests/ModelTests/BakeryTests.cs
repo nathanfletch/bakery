@@ -172,13 +172,27 @@ namespace Bakery.Tests
       {
         Bread myLoaf = new Bread();
       }
-      // Bread myLoaf1 = new Bread();
-      // Bread myLoaf2 = new Bread();
-      // Bread myLoaf3 = new Bread();
       int expectedCost = 10;
+      
       //act
       int result = BakeryItem.GetOrderCost();
-      Console.WriteLine($"Order Count: {BakeryItem.OrderItems.Count}");
+      
+      //assert
+      Assert.AreEqual(expectedCost,result);
+    }
+    [TestMethod]
+    public void GetOrderCost_ReturnsCostOfPastryOnly_5()
+    {
+      //arrange
+      BakeryItem.OrderItems.Clear();
+      for(int i = 0; i < 3; i++)
+      {
+        Pastry myPastry = new Pastry();
+      }
+      int expectedCost = 5;
+
+      //act
+      int result = BakeryItem.GetOrderCost();
       
       //assert
       Assert.AreEqual(expectedCost,result);
