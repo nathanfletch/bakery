@@ -2,9 +2,6 @@ using System.Collections.Generic;
 
 namespace Bakery.Models
 {
-
-  // public string Name;
-
   public class Bread : BakeryItem
   {
     public override string Name

@@ -20,7 +20,6 @@ namespace Bakery.Models
 
     public static int GetOrderCost()
     {
-      
       int numLoaves = 0;
       int numPastries = 0;
       foreach (BakeryItem item in _orderItems)
@@ -42,6 +41,7 @@ namespace Bakery.Models
       string[] itemStrings = itemsToRemove.Split(' ');
       int[] itemInts = Array.ConvertAll(itemStrings, int.Parse);
 
+      //reverse order to avoid index out of range errors
       for (int i = itemInts.Length - 1; i >= 0; i--)
       {
         BakeryItem._orderItems.RemoveAt(itemInts[i] - 1);

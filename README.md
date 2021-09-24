@@ -5,15 +5,18 @@
 
 #### _By Nathan Fletcher_
 
-* This program provides a console interface for users to add and remove items from their order at a bakery. Prices are based off of a dynamic pricing algorithm.
+* This program provides a console interface for users to add and remove items from their order at a bakery. Methods are implemented to calculate discounts.
 
 ## Technologies Used
 
 * C#
+* Object Oriented Programming
+* Interfaces
+* Abstract Class Inheritance
+* Protected Static Variables
+* Auto-implemented Properties
 * MSTest
 * Test Driven Development
-* Object Oriented Programming
-
 
 ## Setup
 
@@ -28,11 +31,13 @@
 * Type `dotnet run`
 </details>
 
-## Known Bugs
-* The static BakeryItem variable should be refactored to be private
+## Known Issues
+* No input validation is implemented - play nice! 
+* Contact me if you find any other bugs or have suggestions 
 ## Future Plans
+* Add input checking
 * Add additional classes and options
-* Make the pricing algorithm more dynamic
+* Add the ability to apply coupons to selectively change which price methods are called.
 * Convert the program to a web app
 ## License
 
@@ -43,30 +48,3 @@ Copyright (c) 2021 Nathan Fletcher
 ## Contact Information
 
 _Nathan Fletcher @ github.com/nathanfletch_  
-
-    /*
-    MVP:
-    Test and implement Bread CalculateCost(int n) static fn
-    Test and implement Pastry CalculateCost(int n) static fn
-    
-    Add abstract class BakeryItem
-    test/imp constructors
-    static list: order 
-
-    calc/disp order cost GetOrderCost
-      use GetType and call each classes' method.
-    UI!
-
-    Completed Extras:
-    -update Readme
-    -ui cycle to keep adding
-    -abstract Name prop
-    -remove from order
-    -Add teardown function with IDisposable interface
-
-    Extra: 
-    extra props 
-    -freshness/daysOld: change price function
-    -names (Bob's Murderer Bread, Focaccia)
-    -privatize the static for BakeryItem
-    */
