@@ -8,17 +8,34 @@ public class Program
     Console.WriteLine($"Welcome to Nathan's Bakery!");
     
     Console.WriteLine($"Today's deals:");
-    Console.WriteLine($"Bread: 5$ a loaf. Buy 2 get 1 free!");
-    Console.WriteLine($"Pastries: 2$ each. Buy 2 get 1 half off!");
-    Console.WriteLine($"How many loaves would you like to buy? Enter a number to add to order: ");
-    int loavesInput = int.Parse(Console.ReadLine());
-    Console.WriteLine($"Your order: {loavesInput} loaves.");
-    
-    // need an addLoaves function
-    // for()
-    
-    
-    
+    Console.WriteLine($"Bread: $5 a loaf. Buy 2 get 1 free!");
+    Console.WriteLine($"Pastries: $2 each. Buy 2 get 1 half off!");
+
+    SellBread();
+    SellPastries();
+    DisplayOrder();
+
+    // void AddToOrder()
+    void SellBread()
+    {
+      Console.WriteLine($"How many loaves would you like to buy?");
+      int loavesInput = int.Parse(Console.ReadLine());
+      Bread.Add(loavesInput);
+    }
+
+    void SellPastries()
+    {
+      Console.WriteLine($"How many pastries would you like to buy?");
+      int pastriesInput = int.Parse(Console.ReadLine());
+      Pastry.Add(pastriesInput);
+    }  
+
+    void DisplayOrder()
+    {
+      Console.WriteLine($"Your order: ${BakeryItem.GetOrderCost()}.");
+    }
+
+
     
   }
 }
