@@ -6,8 +6,13 @@ using System;
 namespace Bakery.Tests
 {
   [TestClass]
-  public class BreadTests
+  public class BreadTests : IDisposable
   {
+    public void Dispose()
+    {
+      BakeryItem.ClearAll();
+    }
+
     [TestMethod]
     public void CalculateCost_ReturnsCost_5()
     {
@@ -75,11 +80,10 @@ namespace Bakery.Tests
       Assert.AreEqual(expectedCost, result);
     }
     [TestMethod]
-    public void Constructor_AddsToOrder_PreviousCountPlus1()
+    public void Constructor_AddsToOrder_1()
     {
       //arrange
-      int startingCount = BakeryItem.OrderItems.Count;
-      int expectedCount = startingCount + 1;
+      int expectedCount = 1;
       //act
       Bread myLoaf = new Bread();
       int result = BakeryItem.OrderItems.Count;
@@ -87,17 +91,15 @@ namespace Bakery.Tests
       Assert.AreEqual(expectedCount, result);
     }
     [TestMethod]
-    public void Add_AddsLoavesToOrder_PreviousCountPlus3()
+    public void Add_AddsLoavesToOrder_3()
     {
       //arrange
       int numToAdd = 3;
-      int startingCount = BakeryItem.OrderItems.Count;
-      int expectedCount = startingCount + numToAdd;
       //act
       Bread.Add(numToAdd);
       int result = BakeryItem.OrderItems.Count;
       //assert
-      Assert.AreEqual(expectedCount, result);
+      Assert.AreEqual(numToAdd, result);
     }
 
     [TestMethod]

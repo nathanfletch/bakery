@@ -5,7 +5,7 @@
 
 #### _By Nathan Fletcher_
 
-* This program provides a console interface for users buy items from a bakery. Prices are based off of a dynamic pricing algorithm.
+* This program provides a console interface for users to add and remove items from their order at a bakery. Prices are based off of a dynamic pricing algorithm.
 
 ## Technologies Used
 
@@ -60,12 +60,13 @@ _Nathan Fletcher @ github.com/nathanfletch_
     Completed Extras:
     -update Readme
     -ui cycle to keep adding
-    Name prop
+    -abstract Name prop
+    -remove from order
+    -Add teardown function with IDisposable interface
 
     Extra: 
     extra props 
     -freshness/daysOld: change price function
     -names (Bob's Murderer Bread, Focaccia)
     -privatize the static for BakeryItem
-    -remove from order
     */

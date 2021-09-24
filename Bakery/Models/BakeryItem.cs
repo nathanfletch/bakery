@@ -38,5 +38,10 @@ namespace Bakery.Models
         BakeryItem.OrderItems.RemoveAt(itemInts[i] - 1);
       }    
     }
+
+    public static void ClearAll()
+    {
+      OrderItems.Clear();
+    }
   }
 }
