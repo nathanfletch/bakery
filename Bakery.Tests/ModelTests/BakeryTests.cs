@@ -143,5 +143,16 @@ namespace Bakery.Tests
       //assert
       Assert.AreEqual(expectedCost, result);
     }
+    [TestMethod]
+    public void Constructor_AddsToOrder_OrderCount1()
+    {
+      //arrange
+      int expectedCount = 1;
+      //act
+      Pastry myPastry = new Pastry();
+      int result = BakeryItem.OrderItems.Count;
+      //assert
+      Assert.AreEqual(expectedCount, result);
+    }
   }
 }

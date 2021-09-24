@@ -4,6 +4,11 @@ namespace Bakery
 {
   public class Pastry : BakeryItem
   {
+    public Pastry()
+    {
+      BakeryItem.OrderItems.Add(this);
+    }
+
     public static int CalculateCost(int pastries)
     {
       int totalCost = 0;
