@@ -6,7 +6,7 @@ namespace Bakery
   {
     public static int CalculateCost(int number)
     {
-      return 5;
+      return number * 5;
     }
   }
 }
