@@ -98,3 +98,4 @@ C:\Users\natha\Desktop\epicodus\cs\Bakery.Solution\Bakery.Tests\obj\Debug\net5.0
 C:\Users\natha\Desktop\epicodus\cs\Bakery.Solution\Bakery.Tests\obj\Debug\net5.0\ref\Bakery.Tests.dll
 C:\Users\natha\Desktop\epicodus\cs\Bakery.Solution\Bakery.Tests\obj\Debug\net5.0\Bakery.Tests.pdb
 C:\Users\natha\Desktop\epicodus\cs\Bakery.Solution\Bakery.Tests\obj\Debug\net5.0\Bakery.Tests.genruntimeconfig.cache
+C:\Users\natha\Desktop\epicodus\cs\Bakery.Solution\Bakery.Tests\bin\Debug\net5.0\Bakery.exe
