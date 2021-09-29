@@ -26,9 +26,11 @@
 * Clone this repository to your local machine
 * Install C# and .NET using the [.NET 5 SDK](https://dotnet.microsoft.com/download/dotnet-core/thank-you/sdk-5.0.100-macos-x64-installer) if necessary
 * Navigate to the Bakery.Tests folder in your terminal
-* Type `dotnet restore`
+* Type `dotnet restore` and press enter.
+* Type `dotnet test`and press enter to run the tests.
 * Navigate to the Bakery folder
-* Type `dotnet run`
+* Type `dotnet build` and press enter to compile the project.
+* Type `dotnet run` to run it and enjoy your visit to the bakery!
 </details>
 
 ## Known Issues
