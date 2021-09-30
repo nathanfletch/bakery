@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\natha\\Desktop\\epicodus\\cs\\Bakery.Solution\\Bakery.Tests\\Bakery.Tests.csproj": {}
+    "C:\\Users\\natha\\Desktop\\epicodus\\cs\\bakery\\Bakery.Tests\\Bakery.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\natha\\Desktop\\epicodus\\cs\\Bakery.Solution\\Bakery.Tests\\Bakery.Tests.csproj": {
+    "C:\\Users\\natha\\Desktop\\epicodus\\cs\\bakery\\Bakery.Tests\\Bakery.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\natha\\Desktop\\epicodus\\cs\\Bakery.Solution\\Bakery.Tests\\Bakery.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\natha\\Desktop\\epicodus\\cs\\bakery\\Bakery.Tests\\Bakery.Tests.csproj",
         "projectName": "Bakery.Tests",
-        "projectPath": "C:\\Users\\natha\\Desktop\\epicodus\\cs\\Bakery.Solution\\Bakery.Tests\\Bakery.Tests.csproj",
+        "projectPath": "C:\\Users\\natha\\Desktop\\epicodus\\cs\\bakery\\Bakery.Tests\\Bakery.Tests.csproj",
         "packagesPath": "C:\\Users\\natha\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\natha\\Desktop\\epicodus\\cs\\Bakery.Solution\\Bakery.Tests\\obj\\",
+        "outputPath": "C:\\Users\\natha\\Desktop\\epicodus\\cs\\bakery\\Bakery.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\natha\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -26,8 +26,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\natha\\Desktop\\epicodus\\cs\\Bakery.Solution\\Bakery\\Bakery.csproj": {
-                "projectPath": "C:\\Users\\natha\\Desktop\\epicodus\\cs\\Bakery.Solution\\Bakery\\Bakery.csproj"
+              "C:\\Users\\natha\\Desktop\\epicodus\\cs\\bakery\\Bakery\\Bakery.csproj": {
+                "projectPath": "C:\\Users\\natha\\Desktop\\epicodus\\cs\\bakery\\Bakery\\Bakery.csproj"
               }
             }
           }
@@ -74,14 +74,14 @@
         }
       }
     },
-    "C:\\Users\\natha\\Desktop\\epicodus\\cs\\Bakery.Solution\\Bakery\\Bakery.csproj": {
+    "C:\\Users\\natha\\Desktop\\epicodus\\cs\\bakery\\Bakery\\Bakery.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\natha\\Desktop\\epicodus\\cs\\Bakery.Solution\\Bakery\\Bakery.csproj",
+        "projectUniqueName": "C:\\Users\\natha\\Desktop\\epicodus\\cs\\bakery\\Bakery\\Bakery.csproj",
         "projectName": "Bakery",
-        "projectPath": "C:\\Users\\natha\\Desktop\\epicodus\\cs\\Bakery.Solution\\Bakery\\Bakery.csproj",
+        "projectPath": "C:\\Users\\natha\\Desktop\\epicodus\\cs\\bakery\\Bakery\\Bakery.csproj",
         "packagesPath": "C:\\Users\\natha\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\natha\\Desktop\\epicodus\\cs\\Bakery.Solution\\Bakery\\obj\\",
+        "outputPath": "C:\\Users\\natha\\Desktop\\epicodus\\cs\\bakery\\Bakery\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\natha\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -14,6 +14,28 @@ namespace Bakery.Tests
     }
 
     [TestMethod]
+    public void Constructor_HasCorrectType_Bread()
+    {
+      //arrange
+      Type expectedType = typeof(Bread);
+      //act
+      Bread myLoaf = new Bread();
+      Type resultType = myLoaf.GetType();
+      //assert
+      Assert.AreEqual(expectedType, resultType);
+    }
+    [TestMethod]
+    public void Constructor_AddsToOrder_1()
+    {
+      //arrange
+      int expectedCount = 1;
+      //act
+      Bread myLoaf = new Bread();
+      int result = BakeryItem.GetCount();
+      //assert
+      Assert.AreEqual(expectedCount, result);
+    }
+    [TestMethod]
     public void CalculateCost_ReturnsCost_5()
     {
       //arrange
@@ -79,17 +101,7 @@ namespace Bakery.Tests
       //assert
       Assert.AreEqual(expectedCost, result);
     }
-    [TestMethod]
-    public void Constructor_AddsToOrder_1()
-    {
-      //arrange
-      int expectedCount = 1;
-      //act
-      Bread myLoaf = new Bread();
-      int result = BakeryItem.GetCount();
-      //assert
-      Assert.AreEqual(expectedCount, result);
-    }
+    
     [TestMethod]
     public void Add_AddsLoavesToOrder_3()
     {

@@ -13,6 +13,28 @@ namespace Bakery.Tests
       BakeryItem.ClearAll();
     }
     [TestMethod]
+    public void Constructor_HasCorrectType_Pastry()
+    {
+      //arrange
+      Type expectedType = typeof(Pastry);
+      //act
+      Pastry myPastry = new Pastry();
+      Type resultType = myPastry.GetType();
+      //assert
+      Assert.AreEqual(expectedType, resultType);
+    }
+    [TestMethod]
+    public void Constructor_AddsToOrder_1()
+    {
+      //arrange
+      int expectedCount = 1;
+      //act
+      Pastry myPastry = new Pastry();
+      int result = BakeryItem.GetCount();
+      //assert
+      Assert.AreEqual(expectedCount, result);
+    }
+    [TestMethod]
     public void CalculateCost_ReturnsCost_2()
     {
       //arrange
@@ -56,17 +78,7 @@ namespace Bakery.Tests
       //assert
       Assert.AreEqual(expectedCost, result);
     }
-    [TestMethod]
-    public void Constructor_AddsToOrder_1()
-    {
-      //arrange
-      int expectedCount = 1;
-      //act
-      Pastry myPastry = new Pastry();
-      int result = BakeryItem.GetCount();
-      //assert
-      Assert.AreEqual(expectedCount, result);
-    }
+    
     [TestMethod]
     public void Add_AddsPastriesToOrder_3()
     {
